@@ -1,0 +1,33 @@
+.shimmer {
+    background-color: #f6f7f8;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    width: 250px;
+  }
+  .shimmer-line,.shimmer-image {
+    height: 20px;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, transparent 0%, #e6e7e8 50%, transparent 100%);
+    animation: shimmer 2s infinite;
+  }
+  .shimmer .shimmer-image{
+    width: 80%;
+    padding:15px 20px;
+    height: 80px;
+  }
+  .shimmer .shimmer-line{
+   width: 100%;
+  }
+  .last{
+    margin-top: 30px;
+  }
+  @keyframes shimmer {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
